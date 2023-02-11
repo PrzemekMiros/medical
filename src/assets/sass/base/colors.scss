@@ -1,6 +1,6 @@
 
 :root {
-    --color-accent-1: rgb(0, 95, 228);
+    --color-accent-1: rgb(228, 34, 0);
     --color-dark-1: #0c1318;
     --color-dark-2: #111b22;
     --color-light-1: #f8f8f8;
@@ -14,7 +14,7 @@
     :root {
     --color-dark-1: #f8f8f8;
     --color-dark-2: #f3f3f3;
-    --color-light-1: #101214;
+    --color-light-1: #141618;
     --color-light-2: #16191c;
     --color-heading: #fff;
     --color-text: #c5c5c5;
@@ -37,4 +37,11 @@
   }
   .bg-light-2 {
     background-color: var(--color-light-2)
+  }
+
+  .color-heading {
+    color: #fff
+  }
+  .color-text {
+    color: #ddd
   }
