@@ -1,8 +1,8 @@
 ---
-title: Pozycjonowanie w Google
-description: Analiza konkurencji i słów kluczowych. Pozyskiwanie linków zewnętrznych, planowanie treści i optymalizacja techniczna.
+title: Zabieg numer 1
+description: 
 date: 2022-07-15
-thumbnail: /assets/img/services/pozycjonowanie.jpg
+thumbnail: /assets/img/service/1.png
 ---
 
 ## Audyt SEO

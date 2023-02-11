@@ -4,11 +4,11 @@ title: Usługi
 description: Zakres usług
 ---
 
-<section class="pt-xlarge pb-small" data-scroll-section>
+<section class="pt-large pb-small" data-scroll-section>
     <div class="container">
         <div class="row gx-0">
-            <div class="offset-md-1 col-md-10">
-                <h1 class="xxl" data-splitting>
+            <div class="offset-md-1 col-md-11">
+                <h1 class="xl" data-splitting>
                     {{ title }}<span class="dot">.</span>
                 </h1>
                 <div class="line-x lx-2"></div>
@@ -19,34 +19,29 @@ description: Zakres usług
 
 <section class="pb-xlarge" data-scroll-section>
     <div class="container">
-        {% set counter = 1 %}
         {% for post in collections.services %}
         <a href="{{ post.url }}">
-            <div class="service-item">
-                <div class="row gx-0 pt-large pb-medium fadeIn">
-                    <div class="offset-md-1 col-md-1">
-                        <p class="service-number mt-1">0{{ counter }}</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="mt-0">{{ post.data.title }}</h3>
-                    </div>
-                    <div class="offset-md-1 col-md-4">
-                        <p class="mt-0">
-                            {{ post.data.description }}
-                        </p>
-                    </div>
-                    <div class="col-md-1 text-md-end">
-                        <p class="service-arrow h2 my-0">+</p>
-                    </div>
+          <div class="services-item fadeIn">
+            <div class="row gx-0">
+              <div class="offset-md-1 col-md-5 bg-light-2">
+                <div class="services-item-content">
+                <h3 class="h4 mt-0">
+                  {{ post.data.title }}
+                </h3>
+                <svg class="pt-small" width="60" height="12" viewBox="0 0 119 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M118.061 13.0607C118.646 12.4749 118.646 11.5251 118.061 10.9393L108.515 1.3934C107.929 0.807612 106.979 0.807612 106.393 1.3934C105.808 1.97918 105.808 2.92893 106.393 3.51472L114.879 12L106.393 20.4853C105.808 21.0711 105.808 22.0208 106.393 22.6066C106.979 23.1924 107.929 23.1924 108.515 22.6066L118.061 13.0607ZM0 13.5H117V10.5H0V13.5Z" fill="black"/>
+                  </svg>                  
                 </div>
-                <div class="row gx-0">
-                    <div class="offset-md-1 col-md-10">
-                        <div class="line-x lx-op"></div>
-                    </div>
+              </div>
+              <div class="col-md-6">
+                <div class="services-item-image">
+                  <img src="{{ post.data.thumbnail }}" alt="">
                 </div>
+              </div>
             </div>
+
+          </div>
         </a>
-        {% set counter = counter + 1 %}
         {% endfor %}
     </div>
 </section>

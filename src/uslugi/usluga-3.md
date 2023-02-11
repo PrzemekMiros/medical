@@ -1,8 +1,8 @@
 ---
-title: Sklepy internetowe
-description: Wyposażone w niezbędne narzędzia ułatwiające sprzedaż w internecie. Narzędzia analityczne, płatności online i zewnętrzne integracje.
-date: 2022-08-15
-thumbnail: /assets/img/services/sklepy.jpg
+title: Zabieg numer 3
+description: 
+date: 2022-10-15
+thumbnail: /assets/img/service/3.png
 ---
 
 ## Projekt i funkcjonalność

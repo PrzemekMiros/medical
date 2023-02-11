@@ -9,69 +9,31 @@
         </h2>
 
         <div class="services-wrap pt-xsmall">
+  
+          {% for post in collections.services %}
+          <a href="{{ post.url }}">
+            <div class="services-item fadeIn">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="services-item-content">
+                  <h3 class="h4 mt-0 mb-0">
+                    {{ post.data.title }}
+                  </h3>
+                  <svg class="pt-medium" width="60" height="12" viewBox="0 0 119 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M118.061 13.0607C118.646 12.4749 118.646 11.5251 118.061 10.9393L108.515 1.3934C107.929 0.807612 106.979 0.807612 106.393 1.3934C105.808 1.97918 105.808 2.92893 106.393 3.51472L114.879 12L106.393 20.4853C105.808 21.0711 105.808 22.0208 106.393 22.6066C106.979 23.1924 107.929 23.1924 108.515 22.6066L118.061 13.0607ZM0 13.5H117V10.5H0V13.5Z" fill="black"/>
+                    </svg>                  
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="services-item-image">
+                    <img src="{{ post.data.thumbnail }}" alt="">
+                  </div>
+                </div>
+              </div>
 
-          <div class="services-item fadeIn">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="services-item-content">
-                <div class="small">
-                    Przychodnia zdrowia
-                </div>
-                <h3 class="h4 mt-0">
-                  Badania profilaktyczne
-                </h3>
-                <svg class="pt-small" width="60" height="12" viewBox="0 0 119 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M118.061 13.0607C118.646 12.4749 118.646 11.5251 118.061 10.9393L108.515 1.3934C107.929 0.807612 106.979 0.807612 106.393 1.3934C105.808 1.97918 105.808 2.92893 106.393 3.51472L114.879 12L106.393 20.4853C105.808 21.0711 105.808 22.0208 106.393 22.6066C106.979 23.1924 107.929 23.1924 108.515 22.6066L118.061 13.0607ZM0 13.5H117V10.5H0V13.5Z" fill="black"/>
-                  </svg>                  
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img src="/assets/img/service/1.png" alt="">
-              </div>
             </div>
-          </div>
-  
-          <div class="services-item fadeIn">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="services-item-content">
-                  <div class="small">
-                    Przychodnia zdrowia
-                  </div>
-                  <h3 class="h4 mt-0">
-                    Badania profilaktyczne
-                  </h3>
-                  <svg class="pt-small" width="60" height="12" viewBox="0 0 119 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M118.061 13.0607C118.646 12.4749 118.646 11.5251 118.061 10.9393L108.515 1.3934C107.929 0.807612 106.979 0.807612 106.393 1.3934C105.808 1.97918 105.808 2.92893 106.393 3.51472L114.879 12L106.393 20.4853C105.808 21.0711 105.808 22.0208 106.393 22.6066C106.979 23.1924 107.929 23.1924 108.515 22.6066L118.061 13.0607ZM0 13.5H117V10.5H0V13.5Z" fill="black"/>
-                  </svg>                    
-                  </div>
-              </div>
-              <div class="col-md-6">
-                <img src="/assets/img/service/2.png" alt="">
-              </div>
-            </div>
-          </div>
-  
-          <div class="services-item fadeIn">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="services-item-content">
-                  <div class="small">
-                    Przychodnia zdrowia
-                  </div>
-                  <h3 class="h4 mt-0">
-                    Badania profilaktyczne
-                  </h3>
-                  <svg class="pt-small" width="60" height="12" viewBox="0 0 119 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M118.061 13.0607C118.646 12.4749 118.646 11.5251 118.061 10.9393L108.515 1.3934C107.929 0.807612 106.979 0.807612 106.393 1.3934C105.808 1.97918 105.808 2.92893 106.393 3.51472L114.879 12L106.393 20.4853C105.808 21.0711 105.808 22.0208 106.393 22.6066C106.979 23.1924 107.929 23.1924 108.515 22.6066L118.061 13.0607ZM0 13.5H117V10.5H0V13.5Z" fill="black"/>
-                  </svg>                    
-                  </div>
-              </div>
-              <div class="col-md-6">
-                <img src="/assets/img/service/3.png" alt="">
-              </div>
-            </div>
-          </div>
+          </a>
+          {% endfor %}
           
         </div>
 

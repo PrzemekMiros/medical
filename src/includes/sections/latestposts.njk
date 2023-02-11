@@ -1,18 +1,14 @@
-<section class="pt-xlarge pb-medium" data-scroll-section>
+<section class="pt-large pb-medium" data-scroll-section>
     <div class="container">
-        <div class="row gx-0">
-            <div class="offset-md-1 col-md-10">
-                <h2 class="xxl fadeIn">
-                    Aktualności<span class="dot">.</span>
-                </h2>
-                <div class="pt-small">
-                    <div class="line-x"></div>
-                </div>
-            </div>
+
+        <div class="subheading fadeIn">
+            Przychodnia zdrowia
         </div>
-        <div class="row pt-medium">
-            <div class="offset-md-1 col-md-10">
-                <div class="row gx-3 gx-xl-5">
+        <h2 class="mt-4 mb-0 fadeIn">
+            Aktualności
+        </h2>
+
+        <div class="row gx-3 gx-xl-5 pt-small">
                     {% for post in collections.posts.slice(0,3) %}
                     <div class="col-md-4 fadeIn pb-small">
                         <a href="{{ post.url }}" title="{{ post.data.title }}">
@@ -45,8 +41,6 @@
                         <div class="line-x lx-1 lx-op"></div>
                     </div>
                     {% endfor %}
-                </div>
-            </div>
         </div>
     </div>
 </section>

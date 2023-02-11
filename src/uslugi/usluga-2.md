@@ -1,8 +1,8 @@
 ---
-title: Strony internetowe
-description: Atrakcyjne wizualnie i zoptymalizowane technicznie strony www. Skuteczne i intuicyjne dla użytkownika.
+title: Zabieg numer 2
+description: 
 date: 2022-09-15
-thumbnail: /assets/img/services/strony.jpg
+thumbnail: /assets/img/service/2.png
 ---
 
 ## Pokaż się z najlepszej strony
