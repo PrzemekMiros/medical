@@ -220,6 +220,7 @@ gsap.to(".scrollprogress", {
 }
 
 // Intro
+/*
 gsap.from(".scrollContainer", {
   autoAlpha: 0,
   opacity: 0,
@@ -284,3 +285,5 @@ tlintro.from(".logo-wrap", {
     duration: 1
   });
 }
+
+*/

@@ -1,0 +1,84 @@
+---
+layout: layouts/blog.njk
+title: Aktualności
+description:
+pagination: 
+    data: collections.posts
+    size: 8
+    alias: blog
+---
+
+  <div class="row gx-4">
+    <div class="offset-md-1 col-md-8">
+      <h1 class="xxl" data-splitting>
+        {{ title }}
+        <span class="dot">.</span>
+      </h1>
+    </div>
+  </div>
+
+  <div class="row gx-4 pb-medium">
+    <div class="offset-md-1 col-md-10">
+      <div class="line-x lx-2"></div>
+    </div>
+  </div>
+ 
+  <div class="row gx-4">
+    <div class="offset-md-1 col-md-10">
+      <div class="row gx-4"> {% for post in blog %} 
+        <div class="col-md-6 fadeIn">
+          <a href="{{ post.url }}">
+            <div class="archive-post pb-small">
+              <div class="portfolio-item">
+              <div class="parallax-wrap aspect_16-9">
+                <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
+              </div>
+              </div>
+              <p class="archive-post-date mt-4 mb-1">
+                <small>{{ post.data.date | dateDisplay}}</small>
+              </p>
+              <h2 class="archive-post-title h4 mt-0">
+                {{ post.data.title }}
+              </h2>
+              <div class="line-x lx-1 lx-op"></div>
+              <a href="{{ post.url }}" class="link-arrow mt-4 mb-2">
+                Czytaj 
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 1L1 13"
+                    stroke="var(--color-dark-1)"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M3 1H13V11"
+                    stroke="var(--color-dark-1)"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </a>
+      </div> 
+      {% endfor %} 
+    </div>
+      <div class="row gx-4">
+        <div class="col-md-6">
+          <nav>
+            <ul class="pagination d-flex fadeIn"> {%- for pageEntry in pagination.pages %} <li class="pagination-item">
+                <a class="pagination-link" href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="active" {% endif %}>{{ loop.index }}</a>
+              </li> {%- endfor %} </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>

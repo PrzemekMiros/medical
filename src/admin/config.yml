@@ -22,19 +22,3 @@ collections:
       - {label: "Obrazek", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "works"
-    label: "Realizacje"
-    folder: "src/realizacje"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/case.njk"}
-      - {label: "Klient", name: "client", widget: "string"}
-      - {label: "Tytuł", name: "title", widget: "string"}
-      - {label: "Krótki opis", name: "description", widget: "string"}
-      - {label: "Autor", name: "author", widget: "string"}
-      - {label: "Data", name: "date", widget: "datetime"}
-      - {label: "Mockup", name: "thumbnail", widget: "image"}
-      - {label: "Kategoria", name: "category", widget: "list"}
-      - {label: "Link", name: "link", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}

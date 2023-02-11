@@ -2,12 +2,12 @@
   position: fixed;
   left: 0; 
   top: 0;
-  padding-top: 25px;
-  width: 100vw;
+  padding-top: 21px;
+  padding-bottom: 3px;
+  width: 100%;
+  max-width: 100vw;
   opacity: 0;
   animation: headerFade .1s forwards .2s;
-  mix-blend-mode: difference;
-  pointer-events: none;
   z-index: 999
 }
 
@@ -24,6 +24,7 @@
   pointer-events: all
 }
 
+/*
 .logo-wrap-inner {
   position: fixed;
   top: 0;
@@ -34,6 +35,7 @@
   opacity: 1;
   z-index: 9
 }
+*/
 
 .logo-wrap svg {
   width: 100%;
@@ -41,13 +43,14 @@
 }
 
 .logo rect {
-  fill: #fff
+  fill: #111
 }
 
 .menu-toggle {
   margin-top: 10px;
   background: transparent;
   border: none;
+  mix-blend-mode: difference;
   pointer-events: all;
   cursor: pointer
 }
@@ -101,7 +104,7 @@
   font-size: 48px;
   color: #fff;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 600;
   display: inline-block;
   line-height: 1;
   transition: opacity .2s ease-in-out;
@@ -143,11 +146,36 @@
   margin-right: 5px
 }
 
-@media(max-width:767px) {
-  .menu-toggle {
-    margin-top: 0
-  }  
+@media(max-width:768px) {
   .main-menu li a {
       font-size: 35px;
+  }
+
+}
+
+@media(min-width:767px) {
+  .site-header::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-light-1);
+    z-index: -1
+  }
+  .desktop-menu ul {
+    margin-top: 0
+}
+  .desktop-menu li {
+      display: inline-block;
+      margin-right: 3em;
+      font-size: 15px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      overflow: visible
+  }
+  .desktop-menu li a.active {
+    color: aquamarine;
   }
 }

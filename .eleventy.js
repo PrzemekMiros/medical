@@ -1,6 +1,5 @@
 const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const Image = require('@11ty/eleventy-img');
-const codeStyleHooks = require("eleventy-plugin-code-style-hooks");
 
 module.exports = function(eleventyConfig) {
 
@@ -23,11 +22,6 @@ module.exports = function(eleventyConfig) {
         return collectionApi.getFilteredByGlob('src/blog/**/*.md').reverse();
         });
     
-        // Collections portfolio
-        eleventyConfig.addCollection('works', function(collectionApi) {
-        return collectionApi.getFilteredByGlob('src/realizacje/**/*.md').reverse();
-        });
-
         // Collections services
         eleventyConfig.addCollection('services', function(collectionApi) {
         return collectionApi.getFilteredByGlob('src/uslugi/**/*.md').reverse();
@@ -71,23 +65,6 @@ module.exports = function(eleventyConfig) {
     
         return `<div class="image-wrapper"><picture> ${source} ${img} </picture></div>`;
       });
-
-
-      // Code blocks
-      eleventyConfig.addPlugin(codeStyleHooks, {
-        colorPreviews: true,
-        defaultLanguage: 'js',
-        highlightSyntax: true,
-        languageLabels: true,
-        lineNumbers: true,
-        markdownTrimTrailingNewline: true,
-        prism: function(prism) {
-          prism.languages.example = {
-            tokenname: /\w+/i
-          }
-        }, 
-      });
-
 
     // Return your Object options:
     return {

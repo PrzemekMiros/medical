@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="generator" content="Eleventy" />
-  <title>{{ title }} - Przemek Miros</title>
+  <title>{{ title }} - Przychodnia Grabów</title>
 
 <!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://przemekmiros.pl/">
+<meta property="og:url" content="https://przychodniagrabow.pl/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ description }}">
@@ -16,8 +16,8 @@
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:domain" content="przemekmiros.pl">
-<meta property="twitter:url" content="https://przemekmiros.pl/">
+<meta property="twitter:domain" content="https://przychodniagrabow.pl">
+<meta property="twitter:url" content="https://przychodniagrabow.pl/">
 <meta name="twitter:title" content="{{ title }}">
 <meta name="twitter:description" content="{{ description }}">
 <meta name="twitter:image" content="/static/img/opengraph.png">
@@ -28,6 +28,13 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
   <style>
     @font-face {
       font-family: 'Poppins';
@@ -163,7 +170,26 @@
             </div>
           </div>
           <div class="col-10 col-md-11 d-flex justify-content-end">
-            <button class="menu-toggle" id="menuToggle" aria-label="Otwórz menu">
+              <nav class="desktop-menu d-none d-md-block">
+                <ul class="desktop-menu-list">
+                  <li>
+                    <a href="/" title="Główna">Główna</a>
+                  </li>
+                  <li>
+                    <a href="/uslugi" class="{% if '/uslugi' in page.url %}active{% endif %}" title="Usługi">Usługi</a>
+                  </li>
+                  <li>
+                    <a href="/aktualnosci" class="{% if '/aktualnosci' in page.url %}active{% endif %}" title="Aktualności">Aktualności</a>
+                  </li>
+                  <li>
+                    <a href="/kontakt" class="{% if '/kontakt' in page.url %}active{% endif %}" title="Kontakt">Kontakt</a>
+                  </li>
+                  <li>
+                    <a href="/kontakt" title="Kontakt" class="button">Umów wizytę</a>
+                  </li>
+                </ul>
+              </nav>
+            <button class="menu-toggle d-block d-md-none" id="menuToggle" aria-label="Otwórz menu">
               <svg class="hamburger" width="40" height="12" viewBox="0 0 40 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <line y1="1" x2="40" y2="1" stroke="#fff" stroke-width="2" />
@@ -188,13 +214,13 @@
                     <a href="/" title="Główna">Główna</a>
                   </li>
                   <li>
-                    <a href="/realizacje/" title="Realizacje">Realizacje</a>
+                    <a href="/uslugi/" title="Usługi">Usługi</a>
                   </li>
                   <li>
-                    <a href="/blog/" title="Artyuły">Artykuły</a>
+                    <a href="/aktualnosci/" title="Aktualności">Aktualności</a>
                   </li>
                   <li>
-                    <a href="/wycena/" title="Wycena">Wycena</a>
+                    <a href="/kontakt/" title="Kontakt">Kontakt</a>
                   </li>
                 </ul>
               </nav>
