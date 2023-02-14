@@ -17,6 +17,7 @@
 
 .site-footer p,
 .site-footer a {
+    font-size: 1.1em;
     color: #fff
 }
 
@@ -24,10 +25,8 @@
     padding: 150px 0 60px;
 }
 
-.copywright a {
-    font-size: 12px;
-    font-weight: 300;
-    opacity: .8
+.footer-nav li {
+    margin-bottom: 1em
 }
 
 @media(min-width:767px) {
