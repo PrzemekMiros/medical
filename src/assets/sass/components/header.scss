@@ -124,9 +124,9 @@
   .header-top-wrap {
     padding-bottom: 1em
   }
-  .header-top-wrap svg {
+  .header-top-wrap .svg-icon {
     margin-right: .8em;
-    margin-bottom: -5px
+    margin-bottom: -9px
   }
   .header-top-border {
     border-bottom: 1px solid var(--color-border)
@@ -159,6 +159,10 @@
   .desktop-menu li svg {
     margin-bottom: -11px
   }
+  .desktop-menu li a {
+    transition: .2s ease-in-out
+  }
+  .desktop-menu li a:hover,
   .desktop-menu li a.active {
     color: var(--color-accent-1)
   }
