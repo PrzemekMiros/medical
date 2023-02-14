@@ -1,5 +1,18 @@
 
 .card {
+    padding: 2em;
+    margin-bottom: 3em;
     border-radius: 12px;
     aspect-ratio: 2/1;
+}
+
+.card ul li {
+    margin-bottom: .5em;
+    font-size: 1.1em;
+    font-weight: 400
+}
+
+.card ul li svg {
+    margin-right: 5px;
+    margin-bottom: -4px
 }

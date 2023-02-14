@@ -105,19 +105,6 @@ tl.from('.main-menu li a', {
 	ease: 'Expo.easeInOut'
 }, "-=0.6");
 
-tl.from('.nav-info', {
-	duration: .6,
-	opacity: 0,
-  y: 20,
-  ease: Power3,
-}, "-=0.8");
-
-tl.from('.h-line-y', {
-	duration: 1,
-	height: "0",
-	ease: 'Expo.easeInOut'
-}, "-=1.3");
-
 tl.reverse();
 
 menuToggle.addEventListener('click', function(){
@@ -227,13 +214,15 @@ gsap.to(".header-bottom", {
   }
 });
 gsap.to(".header-top", {
-  background: "var(--color-light-1)",
-  paddingTop: "1em",
   scrollTrigger: {
-    trigger: ".site-header",
+    trigger: ".scrollContainer",
     scroller: ".scrollContainer",
     start: "top 0%",
-    scrub: true
+    toggleClass: { 
+      className: "header-shrink", 
+      targets: ".header-top" 
+    },
+    scrub: 1
   }
 });
 
