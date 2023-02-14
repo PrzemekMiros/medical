@@ -4,7 +4,7 @@ title: Kontakt
 description: Dane kontaktowe
 ---
 
-<section class="pt-xlarge pb-xlarge" data-scroll-section>
+<section class="pt-xlarge pb-large" data-scroll-section>
     <div class="container">
         <div class="row gx-0">
             <div class="col-md-12">
@@ -16,12 +16,56 @@ description: Dane kontaktowe
     </div>
 </section>
 
-<section class="pt-xlarge pb-xlarge" data-scroll-section>
+<section class="pb-xlarge" data-scroll-section>
     <div class="container">
         <div class="row gx-0">
-            <div class="offset-md-1 col-md-10">
-
+            <div class="col-md-5">
+                <form class="contact-form" onsubmit="return check();" role="form">
+                    <input id="visitor-name" type="text" name="visitor_name"><br/>
+                    <input id="visitor-email" type="text" name="visitor_email"><br/>
+                    <textarea id="visitor-message" name="visitor_msg" cols="30" rows="10"></textarea><br/>
+                    <button id="submit-btn" type="button" onclick="sendForm()" class="button">Wyślij</button>
+                </form>
             </div>
         </div>
     </div>
 </section>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+
+function sendForm() {
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "futurewebstudio@gmail.com",
+    Password : "45421CDC3BBD3E7FE1B34EB94DF4A7B90AA2",
+    To : 'futurewebstudio@gmail.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+        /*    
+        event.preventDefault();  
+
+        Email.send({
+          name:document.getElementById('visitor-name').value,    
+          Host : "smtp.gmail.com",
+          Username : "futurewebstudio@gmail.com",
+          Password : "zkysvdeuacccypem",
+          To : "futurewebstudio@gmail.com",
+          From : document.getElementById('visitor-email').value,
+          Subject : document.getElementById('visitor-name').value,
+          Body : document.getElementById('visitor-message').value
+          }).then(function(response){ 
+           if (response == 'OK') {              
+               alert("Mail sent succeessfully");
+            } else {
+                throw new Error("Error: " + response.statusText);
+            } 
+         });
+         */
+ 
+    }   
+</script>
