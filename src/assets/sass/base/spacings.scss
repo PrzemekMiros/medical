@@ -144,6 +144,9 @@
 }
 
 @media(min-width:1200px) {
+    .pt-lg-medium {
+        padding-top: 90px
+    }
     .pl-xl-0 {
         padding-left: 0
     }
@@ -152,5 +155,11 @@
     }
     .pr-xl-10 {
         padding-right: 10em
+    }
+}
+
+@media(min-width:1200px) {
+    .pt-xl-medium {
+        padding-top: 90px
     }
 }

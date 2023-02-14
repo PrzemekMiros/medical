@@ -9,24 +9,18 @@ pagination:
 ---
 
   <div class="row gx-4">
-    <div class="offset-md-1 col-md-8">
-      <h1 class="xl" data-splitting>
+    <div class="col-md-8">
+      <h1 class="xl color-accent-1" data-splitting>
         {{ title }}
         <span class="dot">.</span>
       </h1>
     </div>
   </div>
-
-  <div class="row gx-4 pb-medium">
-    <div class="offset-md-1 col-md-10">
-      <div class="line-x lx-2"></div>
-    </div>
-  </div>
  
-  <div class="row gx-4">
-    <div class="offset-md-1 col-md-10">
-      <div class="row gx-4"> {% for post in blog %} 
-        <div class="col-md-6 fadeIn">
+  <div class="row gx-4 pt-small">
+    <div class="col-md-12">
+      <div class="row gx-5"> {% for post in blog %} 
+        <div class="col-md-4 fadeIn">
           <a href="{{ post.url }}">
             <div class="archive-post pb-small">
               <div class="portfolio-item">
@@ -37,7 +31,7 @@ pagination:
               <p class="archive-post-date mt-4 mb-1">
                 <small>{{ post.data.date | dateDisplay}}</small>
               </p>
-              <h2 class="archive-post-title h4 mt-0">
+              <h2 class="archive-post-title h5 mt-0">
                 {{ post.data.title }}
               </h2>
               <div class="line-x lx-1 lx-op"></div>

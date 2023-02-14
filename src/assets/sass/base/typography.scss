@@ -5,56 +5,56 @@
 
 .xl {
   margin-bottom: .5em;
-  font-size: 37px;
-  font-weight: 600;
-  line-height: 1.2;
+  font-size: 2.3em;
+  font-weight: 300;
+  line-height: 1.25;
   letter-spacing: 1px;
   color: var(--color-heading)
 }
 
 h1, .h1 {
     margin-bottom: .5em;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 1.2;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.25;
     color: var(--color-heading)
   }
   
 h2, .h2 {
   margin-bottom: .8em;
-  font-size: 27px;
-  font-weight: 600;
-  line-height: 1.2;
+  font-size: 1.7em;
+  font-weight: 300;
+  line-height: 1.25;
   color: var(--color-heading)
 }
 
 h3, .h3 {
   margin-bottom: .8em;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 1.5em;
+  font-weight: 300;
   line-height: 1.4;
   color: var(--color-heading)
 }
 
 h4, .h4 {
 margin-bottom: 1em;
-font-size: 21px;
-font-weight: 600;
+font-size: 1.3em;
+font-weight: 300;
 line-height: 1.4;
 color: var(--color-heading)
 }
 
 h5, .h5 {
   margin-bottom: 1em;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 1.1em;
+  font-weight: 300;
   line-height: 1.4;
   color: var(--color-heading)
 }
 
 p, .paragraph {
   margin-bottom: 2em;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 300;
   line-height: 1.8;
   color: var(--color-text)
@@ -67,13 +67,13 @@ blockquote {
 }
 
 small, .small {
-  font-size: 12px;
+  font-size: .75em;
   line-height: 1.6
 }
 
 .subheading {
   margin-bottom: 1em;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -123,25 +123,25 @@ blockquote p {
 
 @media(min-width:767px) {
   .xl {
-    font-size: 57px
+    font-size: 3.55em
   }
   h1, .h1 {
-      font-size: 46px
+      font-size: 2.85em
   }
   h2, .h2 {
-    font-size: 33px
+    font-size: 2em
   }
   h3, .h3 {
-    font-size: 27px
+    font-size: 1.7em
   }
   h4, .h4 {
-    font-size: 23px
+    font-size: 1.4em
   }
   h5, .h5 {
-    font-size: 19px
+    font-size: 1.2em
   }
   p, .paragraph {
-    font-size: 17px
+    font-size: 1em
   }
   blockquote {
     padding-left: 3em
@@ -153,25 +153,25 @@ blockquote p {
 
 @media(min-width:1200px) {
   .xl {
-    font-size: 68px
+    font-size: 3.8em
   }
   h1, .h1 {
-      font-size: 56px
+      font-size: 3.5
     }
   h2, .h2 {
-    font-size: 44px
+    font-size: 2.75em
   }
   h3, .h3 {
-    font-size: 35px
+    font-size: 2.2em
   } 
   h4, .h4 {
-  font-size: 28px
+  font-size: 1.75em
   }
   h5, .h5 {
-  font-size: 22px
+  font-size: 1.35em
   }
   p, .paragraph {
-    font-size: 18px
+    font-size: 1em
   }
 }
 

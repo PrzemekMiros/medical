@@ -1,11 +1,11 @@
 
 :root {
-    --color-accent-1: rgb(0, 228, 121);
+    --color-accent-1: #ca182e;
     --color-dark-1: #0c1318;
     --color-dark-2: #111b22;
-    --color-light-1: #f8f8f8;
+    --color-light-1: #fff;
     --color-light-2: #f3f3f3;
-    --color-heading: #15212a;
+    --color-heading: #0c1318;
     --color-text: #3f4b53;
     --color-border: #2f3d47;
 }
@@ -22,6 +22,27 @@
     }
   }
 
+  .contrast-low {
+    --color-accent-1: #242d35;
+    --color-dark-1: #242d35;
+    --color-dark-2: #3e474e;
+    --color-light-1: #fff;
+    --color-light-2: #f3f3f3;
+    --color-heading: #3b4045;
+    --color-text: #687177;
+    --color-border: #44545f;
+  }
+
+  .contrast-high {
+    --color-dark-1: #f8f8f8;
+    --color-dark-2: #f3f3f3;
+    --color-light-1: #141618;
+    --color-light-2: #16191c;
+    --color-heading: #fff;
+    --color-text: #c5c5c5;
+    --color-border: #eee;
+  }
+
   .bg-light {
     background-color: #f8f8f8
   }
@@ -33,7 +54,13 @@
   }
 
   .color-accent-1 {
-    color: var(--color-accent-1)
+    color: var(--color-accent-1)!important
+  }
+  .bg-accent-1 {
+    background-color: var(--color-accent-1)
+  }
+  .bg-light-1 {
+    background-color: var(--color-light-1)
   }
   .bg-light-2 {
     background-color: var(--color-light-2)

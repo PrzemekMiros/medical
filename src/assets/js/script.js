@@ -216,6 +216,104 @@ gsap.to(".scrollprogress", {
 });
 }
 
+// Header opacity
+gsap.to(".header-bottom", {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".site-header",
+    scroller: ".scrollContainer",
+    start: "top 0%",
+    scrub: true
+  }
+});
+gsap.to(".header-top", {
+  background: "var(--color-light-1)",
+  paddingTop: "1em",
+  scrollTrigger: {
+    trigger: ".site-header",
+    scroller: ".scrollContainer",
+    start: "top 0%",
+    scrub: true
+  }
+});
+
+// Scheme Modal
+const modals = document.querySelectorAll("[data-modal]");
+
+modals.forEach(function (trigger) {
+  trigger.addEventListener("click", function (event) {
+    event.preventDefault();
+    const modal = document.getElementById(trigger.dataset.modal);
+    modal.classList.add("open");
+    const exits = modal.querySelectorAll(".modal-exit");
+    exits.forEach(function (exit) {
+      exit.addEventListener("click", function (event) {
+        event.preventDefault();
+        modal.classList.remove("open");
+      });
+    });
+  });
+});
+
+// Scheme Buttons
+const main = document.querySelector("html");
+const fontNormal = document.querySelector("#font-normal");
+const fontMedium = document.querySelector("#font-medium");
+const fontLarge = document.querySelector("#font-large");
+
+fontNormal.addEventListener('click', () => {
+  fontNormal.classList.add("active");
+  fontMedium.classList.remove("active");
+  fontLarge.classList.remove("active");
+  main.classList.remove("large");
+  main.classList.remove("medium")
+})
+
+fontMedium.addEventListener('click', () => {
+  fontNormal.classList.remove("active");
+  fontMedium.classList.add("active");
+  fontLarge.classList.remove("active");
+  main.classList.remove("large");
+  main.classList.add("medium")
+})
+
+fontLarge.addEventListener('click', () => {
+  fontNormal.classList.remove("active");
+  fontMedium.classList.remove("active");
+  fontLarge.classList.add("active");
+  main.classList.remove("medium");
+  main.classList.add("large")
+})
+
+
+//Contrast buttons
+const contrastNormal = document.querySelector("#contrast-normal");
+const contrastLow = document.querySelector("#contrast-low");
+const contrastHigh = document.querySelector("#contrast-high");
+
+contrastNormal.addEventListener('click', () => {
+  contrastNormal.classList.add("active");
+  contrastLow.classList.remove("active");
+  contrastHigh.classList.remove("active");
+  main.classList.remove("contrast-low");
+  main.classList.remove("contrast-high");
+})
+
+contrastLow.addEventListener('click', () => {
+  contrastNormal.classList.remove("active");
+  contrastLow.classList.add("active");
+  contrastHigh.classList.remove("active");
+  main.classList.add("contrast-low");
+  main.classList.remove("contrast-high");
+})
+
+contrastHigh.addEventListener('click', () => {
+  contrastNormal.classList.remove("active");
+  contrastLow.classList.remove("active");
+  contrastHigh.classList.add("active");
+  main.classList.add("contrast-high");
+  main.classList.remove("contrast-low");
+})
 
 }
 

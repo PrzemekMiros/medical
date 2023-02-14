@@ -7,15 +7,43 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
+    font-size: 16px;
+    min-height: 100vh;
     color: var(--color-text);
     font-family: var(--font-primary);
     font-weight: 200
   }
 
-  .scrollContainer {
-    background-color: var(--color-light-1);
+  body::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/assets/img/hero/hero-bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    mix-blend-mode: difference;
   }
 
+  .contrast-high body::before {
+    background-image: url("/assets/img/hero/hero-bg-dark.png");
+    }
+
+  @media (prefers-color-scheme:dark) {
+    body::before {
+    background-image: url("/assets/img/hero/hero-bg-dark.png");
+    }
+  }
+
+  .medium body {
+    font-size: 18px
+  }
+  .large body {
+    font-size: 20px
+  }
+  
   img {
     display: block;
     width: 100%;
@@ -181,6 +209,7 @@ body {
 }
 
 .services-item-image {
+  background-color: var(--color-accent-1);
   aspect-ratio: 12/5;
   overflow: hidden
 }
@@ -188,7 +217,8 @@ body {
 .services-item-image img {
   height: 100%;
   object-fit: cover;
-  transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1)
+  transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: .1;
 }
 
 .services-item:hover img {
