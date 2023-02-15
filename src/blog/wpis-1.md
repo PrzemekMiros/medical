@@ -1,10 +1,12 @@
 ---
-title: Zabieg numer 2
-description: 
-date: 2022-09-15
-thumbnail: /assets/img/service/2.png
+title: Lorem ipsum dolor sit amet 1
+description: Lorem ipsum dolor sit amet
+date: 2023-01-15
+author: Przemek
+thumbnail: /assets/img/blog/1.png
+tag:
+  - zabiegi
 ---
-
 
 ## Lorem ipsum dolor sit amet
 

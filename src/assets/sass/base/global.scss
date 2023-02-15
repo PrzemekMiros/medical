@@ -233,29 +233,64 @@ body {
 }
 
 .services-item {
-  margin-bottom: 4px;
-  background: var(--color-light-1)
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1.8em;
+  padding: 3em 2.5em 2em;
+  min-height: 300px;
+  background: var(--color-light-1);
+  border-radius: 12px;
+  transition: .3s ease-in-out
 }
 
-.services-item-content {
-  padding: 3em 2.5em 2em
+.services-item-title,
+.services-item:hover .services-list-item,
+.services-item:hover .services-item-icon circle,
+.services-item:hover .services-list-item svg path {
+  transition: .3s ease-in-out
 }
 
-.services-item-image {
-  background-color: var(--color-accent-1);
-  aspect-ratio: 12/5;
-  overflow: hidden
+.services-item-icon {
+  width: 44px;
+  height: 44px;
+  transition: .2s ease-in-out
 }
 
-.services-item-image img {
-  height: 100%;
-  object-fit: cover;
-  transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1);
-  opacity: .1;
+.services-item:hover {
+  background-color: var(--color-accent-1)
+}
+
+.services-item:hover .services-item-title {
+  color: #fff!important
+}
+.services-item:hover .services-list-item {
+  color: #fff;
+}
+.services-item:hover .services-list-item svg path {
+  stroke: #fff
+}
+.services-item:hover .services-item-icon {
+  transform: rotate(45deg)
+}
+.services-item:hover .services-item-icon path {
+  stroke: var(--color-accent-1)
+}
+.services-item:hover .services-item-icon circle {
+  fill: #fff
 }
 
 .services-item:hover img {
   transform: scale(1.05)
+}
+
+.services-list-item {
+  margin-bottom: 1em;
+  font-weight: 400;
+}
+
+.services-list-item svg path {
+  stroke: var(--color-accent-1)
 }
 
 

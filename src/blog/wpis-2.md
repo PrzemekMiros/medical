@@ -1,10 +1,12 @@
 ---
-title: Zabieg numer 2
-description: 
-date: 2022-09-15
-thumbnail: /assets/img/service/2.png
+title: Lorem ipsum dolor sit amet 3
+description: Lorem ipsum dolor sit amet
+date: 2023-01-11T15:27:05.326Z
+author: Przemek Miros
+thumbnail: /assets/img/blog/3.png
+tag:
+  - badania
 ---
-
 
 ## Lorem ipsum dolor sit amet
 

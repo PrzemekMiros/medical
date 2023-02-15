@@ -5,42 +5,91 @@ description: Zakres usług
 ---
 
 <section class="pt-xlarge pb-small" data-scroll-section>
-    <div class="container">
-        <div class="row gx-0">
-            <div class="col-md-12">
-                <h1 class="xl" data-splitting>
-                    {{ title }}<span class="dot">.</span>
-                </h1>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row gx-0">
+      <div class="col-md-12">
+        <h1 class="xl" data-splitting>
+          {{ title }}<span class="dot">.</span>
+        </h1>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="pb-xlarge" data-scroll-section>
-    <div class="container">
-        {% for post in collections.services %}
+  <div class="container">
+    <div class="row">
+      {% for post in collections.services %}
+      <div class="col-md-6 fadeIn">
         <a href="{{ post.url }}">
-          <div class="services-item fadeIn">
-            <div class="row gx-0">
-              <div class="col-md-6">
-                <div class="services-item-content">
-                <h3 class="h4 mt-0">
-                  {{ post.data.title }}
-                </h3>
-                <svg class="pt-small" width="60" height="12" viewBox="0 0 119 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M118.061 13.0607C118.646 12.4749 118.646 11.5251 118.061 10.9393L108.515 1.3934C107.929 0.807612 106.979 0.807612 106.393 1.3934C105.808 1.97918 105.808 2.92893 106.393 3.51472L114.879 12L106.393 20.4853C105.808 21.0711 105.808 22.0208 106.393 22.6066C106.979 23.1924 107.929 23.1924 108.515 22.6066L118.061 13.0607ZM0 13.5H117V10.5H0V13.5Z" fill="var(--color-dark-1)"/>
-                  </svg>                  
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="services-item-image">
-                  <img src="{{ post.data.thumbnail }}" alt="">
-                </div>
-              </div>
+          <div class="services-item">
+            <div>
+              <h3 class="services-item-title h4 color-accent-2 mt-0">
+                {{ post.data.title }}
+              </h3>
+              <ul>
+            <li class="services-list-item">
+              <svg class="arrow-small" fill="none" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" height="10"
+                width="10">
+                <path d="M13 1L1 13" stroke="#fff" stroke-linecap="round" stroke-width="2" stroke-linejoin="round">
+                </path>
+                <path d="M3 1H13V11" stroke="#fff" stroke-linecap="round" stroke-width="2" stroke-linejoin="round">
+                </path>
+              </svg>
+              Laboratorium
+            </li>
+            <li class="services-list-item">
+              <svg class="arrow-small" fill="none" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" height="10"
+                width="10">
+                <path d="M13 1L1 13" stroke="#fff" stroke-linecap="round" stroke-width="2" stroke-linejoin="round">
+                </path>
+                <path d="M3 1H13V11" stroke="#fff" stroke-linecap="round" stroke-width="2" stroke-linejoin="round">
+                </path>
+              </svg>
+              Badania lekarskie
+            </li>
+            <li class="services-list-item">
+              <svg class="arrow-small" fill="none" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" height="10"
+                width="10">
+                <path d="M13 1L1 13" stroke="#fff" stroke-linecap="round" stroke-width="2" stroke-linejoin="round">
+                </path>
+                <path d="M3 1H13V11" stroke="#fff" stroke-linecap="round" stroke-width="2" stroke-linejoin="round">
+                </path>
+              </svg>
+              Zabiegi lecznicze
+            </li>
+            <li class="services-list-item">
+              <svg class="arrow-small" fill="none" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" height="10"
+                width="10">
+                <path d="M13 1L1 13" stroke="#fff" stroke-linecap="round" stroke-width="2" stroke-linejoin="round">
+                </path>
+                <path d="M3 1H13V11" stroke="#fff" stroke-linecap="round" stroke-width="2" stroke-linejoin="round">
+                </path>
+              </svg>
+              Punkt szczepień
+            </li>
+          </ul>
             </div>
-
+            <div>
+              <svg class="services-item-icon" width="130" height="130" viewBox="0 0 130 130" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="65" cy="65" r="65" fill="#CA182E" />
+                <g clip-path="url(#clip0_20_13)">
+                  <path d="M20.8829 109.418L86.5618 43.7389" stroke="white" stroke-width="3" stroke-linecap="round" />
+                  <path d="M43.2018 43.5886L86.5618 43.7389" stroke="white" stroke-width="3" stroke-linecap="round" />
+                  <path d="M86.7119 87.0989L86.5617 43.7389" stroke="white" stroke-width="3" stroke-linecap="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20_13">
+                    <rect width="65" height="65" fill="white" transform="translate(19 64.9619) rotate(-45)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
           </div>
         </a>
-        {% endfor %}
+      </div>
+      {% endfor %}
     </div>
+  </div>
 </section>
