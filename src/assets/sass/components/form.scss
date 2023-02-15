@@ -6,10 +6,12 @@ textarea {
     max-width: 100%;
     width: -moz-available;
     margin-bottom: 1em;
+    background-color: var(--color-light-1);
+    color: var(--color-dark-2);
     border: none;
-    border-radius: 3px;
-    border-bottom: 1px solid #9992;
-    outline: 1px solid transparent;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
     font-family: var(--font-primary);
     font-size: 1em;
     transition: .2s ease-in-out
@@ -21,7 +23,8 @@ input:visited,
 textarea:active,
 textarea:focus,
 textarea:visited {
-    outline: 1px solid var(--color-accent-1)
+    outline: none;
+    border: 1px solid var(--color-accent-1)
 }
 
 #submit-btn {
