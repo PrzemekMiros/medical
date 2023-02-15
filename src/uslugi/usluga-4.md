@@ -1,8 +1,8 @@
 ---
-title: Badania podstawowe
+title: Infekcje
 description: 
-date: 2022-09-15
-thumbnail: /assets/img/service/2.png
+date: 2022-07-15
+thumbnail: /assets/img/service/1.png
 ---
 
 Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 

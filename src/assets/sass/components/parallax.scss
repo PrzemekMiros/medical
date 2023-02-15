@@ -18,6 +18,17 @@
   .aspect_16-5 {
     --ratio: 1380/468;
   }
+
+  .parallax-wrap-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 12px;
+    background-color: var(--color-accent-1);
+    opacity: .7
+  }
   
   .parallax-wrap img {
     position: absolute;

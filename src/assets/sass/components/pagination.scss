@@ -1,6 +1,12 @@
-
 .pagination-item a {
+  display: inline-block;
   margin-right: .6em;
-  padding: .6em 1em;
-  background: var(--color-light-2)
+  height: 40px;
+  width: 40px;
+  background: var(--color-accent-1);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.5
 }

@@ -1,7 +1,7 @@
 
 input,
 textarea {
-    padding: 1.2em;
+    padding: 1em 1.2em;
     min-width: -moz-available;
     max-width: 100%;
     width: -moz-available;
@@ -9,7 +9,7 @@ textarea {
     background-color: var(--color-light-1);
     color: var(--color-dark-2);
     border: none;
-    border-radius: 5px;
+    border-radius: 12px;
     border: 1px solid transparent;
     outline: none;
     font-family: var(--font-primary);

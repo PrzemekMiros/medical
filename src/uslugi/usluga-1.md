@@ -1,5 +1,5 @@
 ---
-title: Zabieg numer 1
+title: Laboratorium
 description: 
 date: 2022-07-15
 thumbnail: /assets/img/service/1.png

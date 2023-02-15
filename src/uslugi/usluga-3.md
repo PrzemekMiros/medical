@@ -1,5 +1,5 @@
 ---
-title: Zabieg numer 3
+title: Alergie i nietolerancje
 description: 
 date: 2022-10-15
 thumbnail: /assets/img/service/3.png
