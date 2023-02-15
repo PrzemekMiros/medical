@@ -1,6 +1,7 @@
 @media(min-width:767px) {
 .portfolio-item {
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 12px
 }
 .portfolio-item div {
     transition: 1.3s cubic-bezier(.79,0,.07,.88)
