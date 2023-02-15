@@ -1,11 +1,27 @@
 
 input,
 textarea {
-    padding: 1em;
-    min-width: 100%;
+    padding: 1.2em;
+    min-width: -moz-available;
     max-width: 100%;
-    width: max-content;
+    width: -moz-available;
     margin-bottom: 1em;
+    border: none;
+    border-radius: 3px;
+    border-bottom: 1px solid #9992;
+    outline: 1px solid transparent;
+    font-family: var(--font-primary);
+    font-size: 1em;
+    transition: .2s ease-in-out
+}
+
+input:active,
+input:focus,
+input:visited,
+textarea:active,
+textarea:focus,
+textarea:visited {
+    outline: 1px solid var(--color-accent-1)
 }
 
 #submit-btn {
