@@ -4,7 +4,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="offset-md-2 col-md-6">
+            <div class="offset-md-2 col-md-7">
                     <div class="single-post-title-wrap pt-small">
                         <div class="breacrumbs fadeIn">
                             <a href="/" title="Strona glówna">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7">
                 {{ content | safe}}
             </div>
         </div>
@@ -59,13 +59,13 @@
                     <ul class="d-flex flex-wrap fadeIn">
                         {%- if previousPost %}
                         <li class="hover-reveal-wrap col-md-6 prev d-none d-md-block">
-                            <p class="mb-4">
+                            <p class="mb-4 pr-md-5">
                                 <small>
                                     Kolejny:
                                 </small>
                             </p>
                             <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.client }}"
-                                class="h3">{{ previousPost.data.title }}</a>
+                                class="h3 pr-md-5">{{ previousPost.data.title }}</a>
                             <div class="hover-reveal">
                                 <img src="{{ previousPost.data.thumbnail }}" class="hidden-img">
                             </div>
@@ -73,13 +73,13 @@
                         {% endif %}
                         {%- if nextPost %}
                         <li class="hover-reveal-wrap col-md-5 next">
-                            <p class="mb-4">
+                            <p class="mb-4 pr-md-5">
                                 <small>
                                     Kolejny:
                                 </small>
                             </p>
                             <a href="{{ nextPost.url | url }}" title="{{ nextPost.data.client }}"
-                                class="h3">{{ nextPost.data.title }}</a>
+                                class="h3 pr-md-5">{{ nextPost.data.title }}</a>
                             <div class="hover-reveal">
                                 <img src="{{ nextPost.data.thumbnail }}" class="hidden-img">
                             </div>
