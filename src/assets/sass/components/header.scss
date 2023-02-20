@@ -18,21 +18,8 @@
   display: inline-block
 }
 
-/*
-.logo-wrap-inner {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--color-light-1);
-  pointer-events: none;
-  opacity: 1;
-  z-index: 9
-}
-*/
-
 .logo-wrap svg {
-  width: 80%;
+  width: 75%;
   height: auto
 }
 
@@ -162,7 +149,7 @@
       overflow: visible
   }
   .desktop-menu li:first-child {
-    margin-left: .4em;
+    margin-left: .45em;
     margin-right: 3vw
   }
   .desktop-menu li svg {

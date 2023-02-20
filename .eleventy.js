@@ -27,6 +27,10 @@ module.exports = function(eleventyConfig) {
         return collectionApi.getFilteredByGlob('src/uslugi/**/*.md').reverse();
         });
 
+        eleventyConfig.addCollection("gallery", function(collectionApi) {
+          return collectionApi.getFilteredByGlob("src/assets/img/gallery/*.jpg");
+        });
+        
     eleventyConfig.addNunjucksAsyncShortcode('Image', async (src, alt) => {
         if (!alt) {
           throw new Error(`Missing \`alt\` on myImage from: ${src}`);
@@ -65,6 +69,7 @@ module.exports = function(eleventyConfig) {
     
         return `<div class="image-wrapper"><picture> ${source} ${img} </picture></div>`;
       });
+  
 
     // Return your Object options:
     return {
