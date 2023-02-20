@@ -27,7 +27,7 @@
                         {{ title }}
                     </h1>
                 </div>
-                <div class="parallax-wrap aspect_16-5">
+                <div class="aspect_16-5 mb-5">
                     <img src="{{ thumbnail }}" alt="{{ title }}" loading="lazy" />
                 </div>
                 {{ content | safe}}
@@ -35,16 +35,16 @@
             <div class="offset-md-1 col-md-4">
                 <div data-scroll data-scroll-sticky data-scroll-target="#pinShare">
                     <div class="pt-xlarge pb-xsmall">
-                        <div class="card p-5 bg-light-1 fadeIn">
-                            <h3 class="h4 mt-0 mb-3">
+                        <div class="card p-4 bg-light-1 fadeIn">
+                            <h3 class="h5 mt-4 mb-1">
                                 Zobacz również
                             </h3>
                            {% for post in collections.posts %}
                             <div class="row pt-xsmall pb-xsmall">
                                 <a href="{{ post.url }}" title="{{ post.data.title }}">
-                                    <h2 class="archive-post-title h6 mt-0 mb-0">
+                                    <p class="archive-post-title mt-0 mb-0">
                                         {{ post.data.title }}
-                                    </h2>
+                                    </p>
                                 </a>                             
                             </div>
                             <div class="line-x lx-1"></div>
