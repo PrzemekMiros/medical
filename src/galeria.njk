@@ -21,21 +21,6 @@ description: Galeria zdjęć
         <div class="row gx-0">
             <div class="col-md-10">
 
-
-
-{% block content %}
-  <h1>Galeria zdjęć</h1>
-  <div class="gallery">
-    {% for img in collections.gallery %}
-      <a href="{{ img.url }}" data-lightbox="gallery">
-        <img src="{{ img | resize(300) }}" alt="{{ img.data.title }}">
-      </a>
-    {% endfor %}
-  </div>
-{% endblock %}
-
-   {% Image "src/assets/img/gallery/gabinet-lekarski.jpg", "Avatar" %}
-
             </div>
         </div>
     </div>
