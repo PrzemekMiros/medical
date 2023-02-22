@@ -71,11 +71,6 @@
                     <ul class="d-flex flex-wrap fadeIn">
                         {%- if previousPost %}
                         <li class="hover-reveal-wrap col-md-6 prev d-none d-md-block">
-                            <p class="mb-4 pr-md-5">
-                                <small>
-                                    Kolejny:
-                                </small>
-                            </p>
                             <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.client }}"
                                 class="h3 pr-md-5">{{ previousPost.data.title }}</a>
                             <div class="hover-reveal">
@@ -85,11 +80,6 @@
                         {% endif %}
                         {%- if nextPost %}
                         <li class="hover-reveal-wrap col-md-5 next">
-                            <p class="mb-4 pr-md-5">
-                                <small>
-                                    Kolejny:
-                                </small>
-                            </p>
                             <a href="{{ nextPost.url | url }}" title="{{ nextPost.data.client }}"
                                 class="h3 pr-md-5">{{ nextPost.data.title }}</a>
                             <div class="hover-reveal">
