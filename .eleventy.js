@@ -3,13 +3,13 @@ const Image = require('@11ty/eleventy-img');
 
 module.exports = function(eleventyConfig) {
 
-    eleventyConfig.addPassthroughCopy("src/assets/css");
-    eleventyConfig.addPassthroughCopy("src/assets/js");
-    eleventyConfig.addPassthroughCopy("src/assets/img");
-    eleventyConfig.addPassthroughCopy("src/assets/fonts");
-    eleventyConfig.addPassthroughCopy("src/static");
-    eleventyConfig.addPassthroughCopy("src/admin");
-    eleventyConfig.addWatchTarget("src/assets/sass");
+    eleventyConfig.addPassthroughCopy("src/assets/css/");
+    eleventyConfig.addPassthroughCopy("src/assets/js/");
+    eleventyConfig.addPassthroughCopy("src/assets/img/");
+    eleventyConfig.addPassthroughCopy("src/assets/fonts/");
+    eleventyConfig.addPassthroughCopy("src/static/");
+    eleventyConfig.addPassthroughCopy("src/admin/");
+    eleventyConfig.addWatchTarget("src/assets/sass/");
 
     eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
 
@@ -27,10 +27,7 @@ module.exports = function(eleventyConfig) {
         return collectionApi.getFilteredByGlob('src/uslugi/**/*.md').reverse();
         });
 
-        eleventyConfig.addCollection("gallery", function(collectionApi) {
-          return collectionApi.getFilteredByGlob("src/assets/img/gallery/*.jpg");
-        });
-        
+
     eleventyConfig.addNunjucksAsyncShortcode('Image', async (src, alt) => {
         if (!alt) {
           throw new Error(`Missing \`alt\` on myImage from: ${src}`);
