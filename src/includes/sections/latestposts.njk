@@ -1,26 +1,14 @@
-<section class="pt-large pb-medium" data-scroll-section>
+<section class="pb-large" data-scroll-section>
     <div class="container">
-
-        <div class="subheading fadeIn">
-            Przychodnia zdrowia
-        </div>
-        <h2 class="mt-4 mb-0 fadeIn">
+        <h2 class="h1 fadeIn">
             Aktualności
         </h2>
-
-        <div class="row gx-3 gx-xl-5 pt-small">
+        <div class="row gx-5 pt-small">
                     {% for post in collections.posts.slice(0,3) %}
-                    <div class="col-md-4 fadeIn pb-small">
-                        <a href="{{ post.url }}" title="{{ post.data.title }}">
-                            <div class="portfolio-item">
-                                <div class="parallax-wrap aspect_16-9">
-                                    <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
-                                </div>
-                            </div>
-                        </a>
-                        <p class="capitalize mb-2">
+                    <div class="col-md-6 fadeIn pb-small">
+                        <p class="color-accent-1 mb-2">
                             <small>
-                                {{ post.data.tag }}
+                               12.02.2023
                             </small>
                         </p>
                         <a href="{{ post.url }}" title="{{ post.data.title }}">
@@ -38,7 +26,6 @@
                                     stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
                         </a>
-                        <div class="line-x lx-1 lx-op"></div>
                     </div>
                     {% endfor %}
         </div>
