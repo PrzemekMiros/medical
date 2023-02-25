@@ -5,9 +5,9 @@
         <div class="h-100">
         <div class="offer-card bg-light-1">
           <div>
-            <h3 class="h4">
+            <h2 class="h4">
               Godziny pracy
-            </h3>
+            </h2>
             <ul class="list">
             {% for post in collections.posts.slice(0,3) %}
             <li class="services-list-item">
@@ -111,7 +111,9 @@
             </li>
           </ul>
         </div>
-        <img src="/assets/img/main/doctor-2.png" class="doctor-img" alt="">
+        <div class="doctor-img">
+          {% Image "src/assets/img/main/doctor-2.png", "Ośrodek zdrowia w Grabowie nad Pilicą - Dane kontaktowe" %}
+        </div>
         </div>
       </div>
 
