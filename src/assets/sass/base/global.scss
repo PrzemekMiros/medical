@@ -204,6 +204,12 @@ body {
   position: relative;
 }
 
+.post-card {
+  padding: 2em;
+  background-color: var(--color-light-1);
+  border-radius: 12px
+}
+
 .about-img-wrap div:nth-child(2) {
   position: absolute;
   bottom: 16%;

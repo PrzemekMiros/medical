@@ -48,7 +48,7 @@ function animationMain() {
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
-            start: "top 90%",
+            start: "top 95%",
           }
     })
 });
