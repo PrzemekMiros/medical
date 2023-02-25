@@ -3,13 +3,13 @@ const Image = require('@11ty/eleventy-img');
 
 module.exports = function(eleventyConfig) {
 
-    eleventyConfig.addPassthroughCopy("src/assets/css/");
-    eleventyConfig.addPassthroughCopy("src/assets/js/");
-    eleventyConfig.addPassthroughCopy("src/assets/img/");
-    eleventyConfig.addPassthroughCopy("src/assets/fonts/");
-    eleventyConfig.addPassthroughCopy("src/static/");
-    eleventyConfig.addPassthroughCopy("src/admin/");
-    eleventyConfig.addWatchTarget("src/assets/sass/");
+    eleventyConfig.addPassthroughCopy("src/assets/css");
+    eleventyConfig.addPassthroughCopy("src/assets/js");
+    eleventyConfig.addPassthroughCopy("src/assets/img");
+    eleventyConfig.addPassthroughCopy("src/assets/fonts");
+    eleventyConfig.addPassthroughCopy("src/static");
+    eleventyConfig.addPassthroughCopy("src/admin");
+    eleventyConfig.addWatchTarget("src/assets/sass");
 
     eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
 
