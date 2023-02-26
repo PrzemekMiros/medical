@@ -1,7 +1,7 @@
 ---
 title: Profilaktyka chorób układu krążenia (CHUK)  
 description: Lorem ipsum dolor sit amet
-date: 2023-01-15
+date: 2023-02-15
 author: Przemek
 thumbnail: /assets/img/blog/chuk1.png
 tag:

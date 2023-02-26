@@ -28,23 +28,24 @@
 .overlay-text-up,
 .overlay-text-down {
     position: absolute;
-    left: 3em;
+    left: 3.2em;
     color: #fff;
     z-index: 99
 }
 .overlay-text-up {
-    top: 3em
+    top: 3.2em
 }
 .overlay-text-down {
-    bottom: 3em
+    bottom: 3.2em
 }
 .gallery-title {
+    font-weight: 500;
     color: #fff
 }
 .gallery-btn {
     display: flex;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 500
 }
 .gallery-btn svg {

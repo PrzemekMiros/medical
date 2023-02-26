@@ -8,12 +8,12 @@
                     <div class="col-md-6 fadeIn pb-small">
                         <div class="post-card">
                             <p class="color-accent-1 mb-2">
-                                <small>
-                                   12.02.2023
+                                <small> 
+                                    {{ post.data.date | dateDisplay}}
                                 </small>
                             </p>
                             <a href="{{ post.url }}" title="{{ post.data.title }}">
-                                <h2 class="archive-post-title h5 mt-2 mb-3">
+                                <h2 class="archive-post-title h5 mt-3 mb-3">
                                     {{ post.data.title }}
                                 </h2>
                             </a>
