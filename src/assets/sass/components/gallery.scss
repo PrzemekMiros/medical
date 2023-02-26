@@ -24,3 +24,60 @@
     width: 58%;
     z-index: 9
 }
+
+.overlay-text-up,
+.overlay-text-down {
+    position: absolute;
+    left: 3em;
+    color: #fff;
+    z-index: 99
+}
+.overlay-text-up {
+    top: 3em
+}
+.overlay-text-down {
+    bottom: 3em
+}
+.gallery-title {
+    color: #fff
+}
+.gallery-btn {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: 500
+}
+.gallery-btn svg {
+    margin-left: .6em
+}
+
+.glightbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 12px
+}
+.glightbox:hover img {
+    transform: scale(1.05)
+}
+.glightbox::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: .2;
+    z-index: 9;
+    border-radius: 12px
+}
+.gallery-item img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: .3s ease-in-out
+}
+.zoomable {
+    border-radius: 12px
+}

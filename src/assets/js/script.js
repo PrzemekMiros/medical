@@ -23,6 +23,12 @@ function animationMain() {
   ScrollTrigger.refresh();
   new ResizeObserver(() => locoScroll.update()).observe(document.querySelector(".scrollContainer"));
 
+  const lightbox = GLightbox({
+    touchNavigation: true,
+    loop: false,
+    autoplayVideos: true
+ });
+
     const reveal = document.querySelectorAll(".char");
     
     gsap.from(reveal, {
@@ -152,7 +158,7 @@ if (window.matchMedia("(min-width: 767px)").matches) {
   }
   // Acordion
   if (document.querySelector(".accordion")) {
-  let t = document.getElementsByClassName("accordion");
+  let t = document.getElementsByClassName("ac cordion");
   for (let e = 0; e < t.length; e++) t[e].addEventListener("click", function () {
     let e = this.nextElementSibling;
     if (e.style.maxHeight) e.style.maxHeight = null, this.classList.remove("open");
@@ -188,20 +194,6 @@ if (window.matchMedia("(min-width: 767px)").matches) {
   }
 }; 
 
-// Scroll progress
-if (document.querySelector(".scrollprogress")) {
-gsap.to(".scrollprogress", {
-  height: "calc(100% - 65px)",
-  ease: 'none',
-  scrollTrigger: { 
-    scroller: ".scrollContainer",
-    trigger: ".content",
-    start: "top 80px",
-    end: "bottom 99%",
-    scrub: true,
-  }
-});
-}
 
 // Header opacity
 gsap.to(".header-bottom", {
