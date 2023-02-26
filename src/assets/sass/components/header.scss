@@ -19,13 +19,13 @@
 }
 
 .logo-wrap img {
-  width: 42px;
+  width: 32px;
   height: auto;
   margin-right: .8em
 }
 
 .logo-wrap span {
-  font-size: .85em;
+  font-size: .75em;
   font-weight: 600;
   color: var(--color-dark-1)
 }
@@ -119,6 +119,12 @@
 @media(min-width:767px) {
   .site-header {
     padding-top: 0
+  }
+  .logo-wrap img {
+    width: 42px
+  }
+  .logo-wrap span {
+    font-size: .85em
   }
   .header-top {
     padding-top: 1.8em;
