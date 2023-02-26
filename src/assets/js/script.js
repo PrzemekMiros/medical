@@ -41,7 +41,7 @@ function animationMain() {
         trigger: ".word",
         start: "top 80%",
       }
-    })
+    });
 
     const fadeIn = gsap.utils.toArray('.fadeIn');
 
@@ -84,7 +84,7 @@ gsap.from(".footer-parallax", {
     end: "bottom 90%",
     scrub: true
   }
-})
+});
 
 const menuToggle = document.getElementById("menuToggle");
 
@@ -127,73 +127,7 @@ if (document.querySelector("#greeting")) {
   if (hour < 18) welcomeText = welcomeTypes[0];
   else welcomeText = welcomeTypes[1];
   greeting.innerHTML = welcomeText;
-}
-
-// parallax 
-if (window.matchMedia("(min-width: 767px)").matches) {
-    gsap.utils.toArray(".parallax-wrap").forEach(function(container) {
-      let image = container.querySelector("img");
-    
-      let tl = gsap.timeline({
-          scrollTrigger: {
-            scroller: ".scrollContainer",
-            trigger: container,
-            scrub: true,
-            pin: false,
-          },
-        }); 
-        tl.from(image, {
-          yPercent: -10,
-          ease: "none",
-        }).to(image, {
-          yPercent: 10,
-          ease: "none",
-        }); 
-    });
-  }
-
-  // Loop text
-  if (document.querySelector(".loop-text")) {
-  gsap.to(".loop-text", { xPercent: -50, ease: 'none', duration: 13, repeat: -1 })
-  }
-  // Acordion
-  if (document.querySelector(".accordion")) {
-  let t = document.getElementsByClassName("ac cordion");
-  for (let e = 0; e < t.length; e++) t[e].addEventListener("click", function () {
-    let e = this.nextElementSibling;
-    if (e.style.maxHeight) e.style.maxHeight = null, this.classList.remove("open");
-    else {
-      for (let a = 0; a < t.length; a++) t[a].classList.remove("open"), t[a].nextElementSibling.style.maxHeight = null;
-      e.style.maxHeight = e.scrollHeight + "px", this.classList.toggle("open");
-    }
-  });
-  }
-
-  // Cursor image
-  if (document.querySelector(".hover-reveal-wrap")) {
-  const link = document.querySelectorAll('.hover-reveal-wrap');
-  const linkHoverReveal = document.querySelectorAll('.hover-reveal');
-  const linkImages = document.querySelectorAll('.hidden-img');
-  
-  for(let i = 0; i < link.length; i++) {
-    link[i].addEventListener('mousemove', (e) => {
-      linkHoverReveal[i].style.opacity = 1;
-      linkHoverReveal[i].style.transform = `translate(-95%, -45% )`;
-      
-      // linkHoverReveal[i].style.transform = `translate(-50%, -50% ) rotate(5deg)`;
-      
-      linkImages[i].style.transform = 'scale(1, 1)';
-      linkHoverReveal[i].style.left = e.clientX + "px";
-    })
-    
-    link[i].addEventListener('mouseleave', (e) => {
-      linkHoverReveal[i].style.opacity = 0;
-      linkHoverReveal[i].style.transform = `translate(-95%, -45%) rotate(-5deg)`;
-      linkImages[i].style.transform = 'scale(0.8, 0.8)';
-    })
-  }
-}; 
-
+};
 
 // Header opacity
 gsap.to(".header-bottom", {
