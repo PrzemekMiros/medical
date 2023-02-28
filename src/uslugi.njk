@@ -9,7 +9,7 @@ description: Zakres usług
     <div class="row gx-0">
       <div class="col-md-12">
         <h1 class="xl" data-splitting>
-          {{ title }}<span class="dot">.</span>
+          {{ title }}
         </h1>
       </div>
     </div>
@@ -22,11 +22,29 @@ description: Zakres usług
       {% for post in collections.services %}
       <div class="col-md-6 fadeIn">
           <div class="services-item">
+            <a href="{{ post.url }}">
             <div>
               <h3 class="services-item-title h4 mt-0">
                 {{ post.data.title }}
               </h3>
             </div>
+            <div>
+              <svg class="services-item-icon mt-3" width="130" height="130" viewBox="0 0 130 130" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="65" cy="65" r="65" fill="var(--color-accent-1)" />
+                <g clip-path="url(#clip0_20_13)">
+                  <path d="M20.8829 109.418L86.5618 43.7389" stroke="white" stroke-width="3" stroke-linecap="round" />
+                  <path d="M43.2018 43.5886L86.5618 43.7389" stroke="white" stroke-width="3" stroke-linecap="round" />
+                  <path d="M86.7119 87.0989L86.5617 43.7389" stroke="white" stroke-width="3" stroke-linecap="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20_13">
+                    <rect width="65" height="65" fill="white" transform="translate(19 64.9619) rotate(-45)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            </a>
           </div>
       </div>
       {% endfor %}
