@@ -9,12 +9,18 @@
     line-height: 1;
     border-radius: 32px;
     border: 1px solid var(--color-accent-1);
-    transition: color 0.2s ease-in-out
+    transition: color, background-color, border, 0.2s ease-in-out
 }
 
 .button span {
     display: inline-block;
     transition: .3s ease-in-out
+}
+
+.button:hover {
+    background: var(--color-dark-1);
+    color: var(--color-light-1);
+    border: 1px solid var(--color-dark-1)
 }
 
 .border-btn {
