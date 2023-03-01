@@ -1,7 +1,7 @@
 ---
 title: Gabinet medycyny szkolnej
 description: 
-date: 2022-07-15
+date: 2022-03-15
 thumbnail: /assets/img/service/1.png
 ---
 
