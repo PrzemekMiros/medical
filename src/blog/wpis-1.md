@@ -1,7 +1,7 @@
 ---
 title: Profilaktyka chorób układu krążenia (CHUK)  
 description: Lorem ipsum dolor sit amet
-date: 2023-02-15
+date: 2022-02-15
 author: Przemek
 thumbnail: /assets/img/blog/chuk1.png
 tag:
@@ -33,7 +33,6 @@ Jeśli jesteś osobą w wieku 35, 40, 45, 50 i 55 lat (w danym roku kalendarzowy
 
 Program jest realizowany przez lekarza podstawowej opieki zdrowotnej w SPZOZ Grabów nad Pilicą. 
 
- 
 ### Jak się zgłosić?
 
 Świadczenia w ramach programu udzielane są bez skierowania. Wystarczy zgłosić się do swojego lekarza pierwszego kontaktu. 

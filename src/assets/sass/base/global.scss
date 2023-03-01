@@ -11,10 +11,12 @@ body {
     background-color: var(--color-light-1);
     color: var(--color-text);
     font-family: var(--font-primary);
-    font-weight: 400
+    font-weight: 400;
+    opacity: 0;
+    animation: bodyFade .3s forwards
   }
 
-  body::before {
+body::before {
     position: absolute;
     content: "";
     top: 0;
@@ -32,8 +34,8 @@ body {
     animation: bgAnim 13s infinite
   }
 
-  body.page-home::before,
-  body.page-kontakt::before {
+body.page-home::before,
+body.page-kontakt::before {
     background-size: auto 120%;
     background-position: 70% 100%;
   }
@@ -42,13 +44,22 @@ body {
     background-image: url("/assets/img/hero/hero-bg-dark.png");
   }
 
+  @keyframes bodyFade {
+    0% {
+      opacity: 0
+    }
+    100% {
+      opacity: 1
+    }
+  }
+
   @keyframes bgAnim {
     0% {
       transform: rotateY(0);
       background-size: auto 140%;
     }
     50% {
-      transform: rotateY(-13deg);
+      transform: rotateY(-8deg);
       background-size: auto 142%;
     }
     100% {
