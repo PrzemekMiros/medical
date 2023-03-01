@@ -33,6 +33,11 @@
     font-weight: 500;
     cursor: pointer
   }
+
+  .border-btn:hover {
+    background: var(--color-accent-1);
+    transition: .3s ease-in-out
+  }
   
 
 @media(min-width:767px) {
