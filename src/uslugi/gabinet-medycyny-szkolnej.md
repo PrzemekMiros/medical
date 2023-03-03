@@ -9,9 +9,9 @@ thumbnail: /assets/img/service/1.png
 
 |                   |                 |
 | ----------------- | --------------- |
-| Poniedziałek      | 8.00 - 12.00    |
-| Wtorek            | 8.00 - 12.00    |
-| Środa             | 8.00 - 12.00    |
-| Czwartek          | 8.00 - 12.00    |
-| Piątek            | 8.00 - 12.00    |
+| Poniedziałek      | 8.00 - 18.00    |
+| Wtorek            | 8.00 - 18.00    |
+| Środa             | 8.00 - 18.00    |
+| Czwartek          | 8.00 - 18.00    |
+| Piątek            | 8.00 - 18.00    |
 

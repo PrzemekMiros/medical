@@ -7,6 +7,7 @@ thumbnail: /assets/img/service/1.png
 
 ### Witold Raj - pediatra
 
+### Lech Żak - medycyna rodzinna
 
 |                   |                 |
 | ----------------- | --------------- |

@@ -7,4 +7,3 @@ thumbnail: /assets/img/service/3.png
 
 #### Dorota Jakubiak
 #### Agnieszka Cichońska
-#### Zofia Penkul
