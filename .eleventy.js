@@ -66,21 +66,6 @@ module.exports = function(eleventyConfig) {
       
           return `<div class="image-wrapper"><picture> ${source} ${img} </picture></div>`;
         });
-  
-        // Code blocks
-        eleventyConfig.addPlugin(codeStyleHooks, {
-          colorPreviews: true,
-          defaultLanguage: 'js',
-          highlightSyntax: true,
-          languageLabels: true,
-          lineNumbers: true,
-          markdownTrimTrailingNewline: true,
-          prism: function(prism) {
-            prism.languages.example = {
-              tokenname: /\w+/i
-            }
-          }, 
-        });  
 
     // Return your Object options:
     return {

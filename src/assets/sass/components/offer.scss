@@ -25,3 +25,9 @@
     right: -4em;
     width: 23em
 }
+
+@media(max-width:768px) {
+    .doctor-img {
+        display: none
+    }
+}
