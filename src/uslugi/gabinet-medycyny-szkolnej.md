@@ -2,7 +2,7 @@
 title: Gabinet medycyny szkolnej
 description: 
 date: 2022-03-15
-thumbnail: /assets/img/service/1.png
+thumbnail: /assets/img/service/medycyna-szkolna.jpg
 ---
 
 #### Godziny przyjęć
