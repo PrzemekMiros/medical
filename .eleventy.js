@@ -28,45 +28,59 @@ module.exports = function(eleventyConfig) {
         });
 
 
-    eleventyConfig.addNunjucksAsyncShortcode('Image', async (src, alt) => {
-        if (!alt) {
-          throw new Error(`Missing \`alt\` on myImage from: ${src}`);
-        }
-    
-        let stats = await Image(src, {
-          widths: [25, 320, 640, 960, 1200, 1800, 2400],
-          formats: ['jpeg', 'webp'],
-          urlPath: '/assets/img/',
-          outputDir: './public/assets/img/',
+        eleventyConfig.addNunjucksAsyncShortcode('Image', async (src, alt) => {
+          if (!alt) {
+            throw new Error(`Missing \`alt\` on myImage from: ${src}`);
+          }
+      
+          let stats = await Image(src, {
+            widths: [25, 320, 640, 960, 1200, 1800, 2400],
+            formats: ['jpeg', 'webp'],
+            urlPath: '/assets/img/',
+            outputDir: './public/assets/img/',
+          });
+      
+          let lowestSrc = stats['jpeg'][0];
+      
+          const srcset = Object.keys(stats).reduce(
+            (acc, format) => ({
+              ...acc,
+              [format]: stats[format].reduce(
+                (_acc, curr) => `${_acc} ${curr.srcset} ,`,
+                '',
+              ),
+            }),
+            {},
+          );
+      
+          const source = `<source type="image/webp" srcset="${srcset['webp']}" >`;
+      
+          const img = `<img
+            loading="lazy"
+            alt="${alt}"
+            src="${lowestSrc.url}"
+            sizes='(min-width: 1024px) 1024px, 100vw'
+            srcset="${srcset['jpeg']}"
+            width="${lowestSrc.width}"
+            height="${lowestSrc.height}">`;
+      
+          return `<div class="image-wrapper"><picture> ${source} ${img} </picture></div>`;
         });
-    
-        let lowestSrc = stats['jpeg'][0];
-    
-        const srcset = Object.keys(stats).reduce(
-          (acc, format) => ({
-            ...acc,
-            [format]: stats[format].reduce(
-              (_acc, curr) => `${_acc} ${curr.srcset} ,`,
-              '',
-            ),
-          }),
-          {},
-        );
-    
-        const source = `<source type="image/webp" srcset="${srcset['webp']}" >`;
-    
-        const img = `<img
-          loading="lazy"
-          alt="${alt}"
-          src="${lowestSrc.url}"
-          sizes='(min-width: 1024px) 1024px, 100vw'
-          srcset="${srcset['jpeg']}"
-          width="${lowestSrc.width}"
-          height="${lowestSrc.height}">`;
-    
-        return `<div class="image-wrapper"><picture> ${source} ${img} </picture></div>`;
-      });
   
+        // Code blocks
+        eleventyConfig.addPlugin(codeStyleHooks, {
+          colorPreviews: true,
+          defaultLanguage: 'js',
+          highlightSyntax: true,
+          languageLabels: true,
+          lineNumbers: true,
+          markdownTrimTrailingNewline: true,
+          prism: function(prism) {
+            prism.languages.example = {
+              tokenname: /\w+/i
+            }
+          }, 
+        });  
 
     // Return your Object options:
     return {
