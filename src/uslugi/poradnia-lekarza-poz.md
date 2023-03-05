@@ -7,8 +7,6 @@ thumbnail: /assets/img/service/1.png
 
 ### Witold Raj - pediatra
 
-### Lech Żak - medycyna rodzinna
-
 |                   |                 |
 | ----------------- | --------------- |
 | Poniedziałek      | 8.00 - 14.00    |
@@ -16,4 +14,14 @@ thumbnail: /assets/img/service/1.png
 | Środa             | 8.00 - 14.00    |
 | Czwartek          | 8.00 - 14.00    |
 | Piątek            | 8.00 - 14.00    |
+
+### Lech Żak - medycyna rodzinna
+
+|                   |                 |
+| ----------------- | --------------- |
+| Poniedziałek      | 14.00 - 16.00    |
+| Wtorek            | 14.00 - 16.00    |
+| Środa             | 14.00 - 16.00    |
+| Czwartek          | 14.00 - 16.00    |
+| Piątek            | 14.00 - 16.00    |
 
