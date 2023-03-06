@@ -1,24 +1,14 @@
 .site-footer {
     position: relative;
-    background: #080d10;
+    background: #1a1f22;
     background-size: cover;
     background-position: center;
-}
-
-.site-footer::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    background-color: #ededed
 }
 
 .site-footer p,
 .site-footer a {
     font-size: 1.1em;
-    color: #fff
+    color: #fff 
 }
 
 .footer-top {
@@ -39,6 +29,15 @@
 }
 
 @media(min-width:767px) {
+    .site-footer::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        background-color: #ededed
+    }
     .footer-nav li {
         display: inline-block;
         margin-right: 1.5em

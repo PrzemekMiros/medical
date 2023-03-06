@@ -17,7 +17,7 @@ body {
   }
 
 body::before {
-    position: absolute;
+    position: fixed;
     content: "";
     top: 0;
     left: 0;
