@@ -82,6 +82,9 @@
 .zoomable {
     border-radius: 12px
 }
+.gallery-item-description {
+    display: none
+}
 @media(min-width:767px) {
     .gallery-item a {
         position: relative
@@ -103,6 +106,7 @@
         z-index: 99
     }
     .gallery-item-description {
+        display: block;
         position: absolute;
         bottom: 1.6em;
         left: 2em;
