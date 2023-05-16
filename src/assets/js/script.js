@@ -29,6 +29,16 @@ function animationMain() {
     autoplayVideos: true
  });
 
+ let fadeNoDuration = [...document.querySelectorAll('.fade-no-duration')];
+
+fadeNoDuration.forEach(element =>{
+   gsap.to(element, {
+       autoAlpha: 1,
+       opacity: 1,
+       duration: .1
+   })
+});
+
     const reveal = document.querySelectorAll(".char");
     
     gsap.from(reveal, {

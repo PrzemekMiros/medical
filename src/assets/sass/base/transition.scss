@@ -17,6 +17,11 @@
     background-color: var(--color-accent-1)
   }
 
+  .fade-no-duration {
+    opacity: 0;
+    visibility: hidden
+  }
+
   @media(min-width:767px) {
     html.is-animating .transition-fade {
       transform: translateY(20px);
