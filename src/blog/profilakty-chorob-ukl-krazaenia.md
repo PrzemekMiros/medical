@@ -1,6 +1,6 @@
 ---
 title: Profilaktyka chorób układu krążenia (CHUK)  
-description: Lorem ipsum dolor sit amet
+description: Jeśli jesteś osobą w wieku 35, 40, 45, 50 i 55 lat (w danym roku kalendarzowym) i dotychczas nie rozpoznano u Ciebie choroby układu krążenia oraz nie korzystałeś w ciągu ostatnich 5 lat z badań w ramach programu profilaktyki chorób układu krążenia (CHUK), również u innego świadczeniodawcy. 
 date: 2022-02-15
 author: Przemek
 thumbnail: /assets/img/blog/chuk1.png
