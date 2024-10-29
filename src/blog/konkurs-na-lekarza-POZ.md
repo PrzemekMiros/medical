@@ -8,7 +8,7 @@ tag:
   - konkursy
 ---
 
-Szanowni Państwo,
+**Szanowni Państwo,**
 
 Zamieszczamy na stronie ogłoszenie konkursu na stanowisko Lekarz POZ w SPZOZ w Grabowie nad Pilicą.
 
