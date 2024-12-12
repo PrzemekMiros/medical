@@ -11,5 +11,5 @@ tag:
 ### Komunikat SP ZZOZ Kozienice w sprawie przyjmowania pacjentek oddział ginekologiczny.
 
 
-<a href="/assets/docs/08.2024-Informacja-SP ZZOZ-w-Kozienicach-Oddział-Ginegologiczno-Położniczy.pdf" class="button mt-5" target="_blank" data-no-swup>Pobierz dokument</a>
+<a href="/assets/docs/08.2024-Informacja-SP_ZZOZ-w-Kozienicach-Oddzial-Ginegologiczno-Polozniczy.pdf" class="button mt-5" target="_blank" data-no-swup>Pobierz dokument</a>
 
