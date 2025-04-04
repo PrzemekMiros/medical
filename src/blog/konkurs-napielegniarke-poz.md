@@ -1,7 +1,7 @@
 ---
 title: Konkurs na Pielęgniarkę POZ
-description: Powszechny program szczepień przeciw HPV realizuje założenia i cele Narodowej Strategii Onkologicznej na lata 2020-2030. Uzupełnia bezpłatny program szczepień ochronnych dla dzieci i młodzieży o szczepienie, które chroni przed chorobami wywołanymi przez HPV.
-date: 2022-07-03
+description: Zamieszczamy na stronie ogłoszenie konkursu na stanowisko Pielęgniarki POZ w SPZOZ w Grabowie nad Pilicą.
+date: 2025-03-04
 author: Przemek
 thumbnail: /assets/img/blog/szczepienie.png
 tag:
