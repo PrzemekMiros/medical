@@ -7,7 +7,7 @@
   margin-bottom: .5em;
   font-size: 2.3em;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.15;
   letter-spacing: 1px;
   color: var(--color-heading)
 }
@@ -16,7 +16,7 @@ h1, .h1 {
     margin-bottom: .5em;
     font-size: 2em;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: 1.2;
     color: var(--color-heading)
   }
   
@@ -77,7 +77,9 @@ small, .small {
   font-size: .75em;
   line-height: 1.6
 }
-
+.medium {
+  font-size: 1.25em;
+}
 .subheading {
   margin-bottom: 1em;
   font-size: 1em;
