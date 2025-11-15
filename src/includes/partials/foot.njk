@@ -68,21 +68,31 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(240, 240, 240, 0.9);
             z-index: 9999;
         }
 
         /* Styl dla treści popupu */
-        .popup-content {
+        .popup-content-wrap {
             background: #fff;
-            border-radius: 5px;
+            border-radius: 12px;
             width: 100%;
             text-align: center;
             position: absolute;
+            max-width: 94%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 34px rgba(0, 0, 0, 0.04);
+        }
+
+        .popup-content {
+            padding: 2em;;
+        }
+
+        .popup-content img {
+            margin: 0 auto;
+            width:46px
         }
 
         .popup-content h2 {
@@ -103,17 +113,30 @@
             background: #01A046;
         }
         @media(min-width:767px) {
+          .popup-content-wrap {
+            max-width: 700px;
+        }
         .popup-content {
-            padding: 15px;
-                        max-width: 800px;
+            padding: 4em;
         }
         }
     </style>
 
      <div class="popup-overlay" id="popup">
+        <div class="popup-content-wrap">
         <div class="popup-content">
-            <img src="/assets/img/dzien-pielegniarki.jpg" alt="">
+            <img alt="Samodzielny Publiczny Zakład Opieki Zdrowotnej w Grabowie nad Pilicą - Logo" src="/assets/img/logo/grlogo.png" class="logo">
+            <h4>
+                Szanowni Pacjenci, pragniemy wyrazić naszą głęboką wdzięczność za zaufanie, jakim nas obdarzacie
+            </h4>
+            <p>
+                Państwa pozytywne opinie, wsparcie i zaangażowanie są dla nas najlepszą motywacją i potwierdzają, że nasza praca ma realne znaczenie dla Państwa zdrowia i samopoczucia. Dziękujemy za wszystkie miłe słowa i pozytywne opinie. Doceniamy każde ciepłe słowo i każde dobre słowo, które jest dla nas największą nagrodą.
+            </p>
+            <p>
+                Personel SPZOZ w Grabowie nad Pilicą
+            </p>
             <button onclick="closePopup()">Zamknij</button>
+        </div>
         </div>
     </div>
 
@@ -131,8 +154,8 @@
 
         // Wyświetlanie popupu z 2-sekundowym opóźnieniem
         document.addEventListener('DOMContentLoaded', () => {
-            const startDate = new Date('2025-05-12');
-            const endDate = new Date('2025-05-13');
+            const startDate = new Date('2025-11-14');
+            const endDate = new Date('2025-12-15');
 
             if (isWithinDateRange(startDate, endDate)) {
                 setTimeout(() => {

@@ -3,9 +3,9 @@
 <section class="pt-xsmall pb-xlarge" data-scroll-section>
     <div class="container">
 
-        <div class="content row gx-5 fadeIn" id="pinShare">
+        <div class="content row gx-md-0 fadeIn" id="pinShare">
             <div class="col-md-7">
-                <div class="single-post-title-wrap pt-xlarge">
+                <div class="single-post-title-wrap pt-small pt-md-large">
                     <div class="breacrumbs fadeIn">
                         <a href="/">
                             Główna
@@ -34,14 +34,14 @@
             </div>
             <div class="offset-md-1 col-md-4">
                 <div data-scroll data-scroll-sticky data-scroll-target="#pinShare">
-                    <div class="pt-xlarge pb-xsmall">
-                        <div class="card p-4 bg-light-1 fadeIn">
-                            <h3 class="h5 mt-4 mb-3">
+                    <div class="pt-small pt-md-large pb-xsmall">
+                        <div class="card p-5 bg-light-1 fadeIn">
+                            <h3 class="h4 mt-4 mb-5">
                                 Zobacz również
                             </h3>
                            {% for post in collections.posts %}
                             {%- if post.url != page.url -%}
-                            <div class="row pt-xsmall pb-xsmall">
+                            <div class="row my-4">
                                 <a href="{{ post.url }}" title="{{ post.data.title }}">
                                     <p class="archive-post-title mt-0 mb-0">
                                         {{ post.data.title }}
@@ -51,7 +51,7 @@
                             <div class="line-x lx-1"></div>
                              {%- endif -%}
                             {% endfor %}
-                            <div class="pt-large"></div>
+                            <div class="pt-xsmall"></div>
                         </div>
                     </div>
                 </div>
