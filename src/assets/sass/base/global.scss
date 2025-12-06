@@ -89,6 +89,7 @@ body.page-kontakt::before {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 8px;
   }
 
   a {
@@ -98,6 +99,10 @@ body.page-kontakt::before {
 
   a:visited {
     outline: 2px solid var(--color-accent-1)
+  }
+
+  hr {
+    opacity: .2;
   }
 
   .link {

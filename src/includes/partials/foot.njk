@@ -77,7 +77,6 @@
             background: #fff;
             border-radius: 12px;
             width: 100%;
-            text-align: center;
             position: absolute;
             max-width: 94%;
             top: 50%;
@@ -87,16 +86,17 @@
         }
 
         .popup-content {
-            padding: 2em;;
+            padding: 1em;;
         }
 
         .popup-content img {
             margin: 0 auto;
-            width:46px
+            width:100%
         }
 
-        .popup-content h2 {
-            margin-top: 0;
+        .popup-content h4 {
+            margin-top: -40px;
+            padding-right: 6em;
         }
 
         .popup-content button {
@@ -117,7 +117,7 @@
             max-width: 700px;
         }
         .popup-content {
-            padding: 4em;
+            padding: 2em;
         }
         }
     </style>
@@ -125,15 +125,12 @@
      <div class="popup-overlay" id="popup">
         <div class="popup-content-wrap">
         <div class="popup-content">
-            <img alt="Samodzielny Publiczny Zakład Opieki Zdrowotnej w Grabowie nad Pilicą - Logo" src="/assets/img/logo/grlogo.png" class="logo">
+            <img alt="Samodzielny Publiczny Zakład Opieki Zdrowotnej w Grabowie nad Pilicą - Logo" src="/assets/img/choinka.png" class="logo">
             <h4>
-                Szanowni Pacjenci, pragniemy wyrazić naszą głęboką wdzięczność za zaufanie, jakim nas obdarzacie
+                Najserdeczniejsze życzenia radosnych Świąt Bożego Narodzenia oraz wszelkiej pomyślności i sukcesów w 2026 roku 
             </h4>
-            <p>
-                Państwa pozytywne opinie, wsparcie i zaangażowanie są dla nas najlepszą motywacją i potwierdzają, że nasza praca ma realne znaczenie dla Państwa zdrowia i samopoczucia. Dziękujemy za wszystkie miłe słowa i pozytywne opinie. Doceniamy każde ciepłe słowo i każde dobre słowo, które jest dla nas największą nagrodą.
-            </p>
-            <p>
-                Personel SPZOZ w Grabowie nad Pilicą
+            <p class="medium">
+                Życzy kierownik oraz pracownicy <br class="d-none d-md-block">Przychodni Zdrowia w Grabowie nad Pilicą
             </p>
             <button onclick="closePopup()">Zamknij</button>
         </div>
@@ -155,7 +152,7 @@
         // Wyświetlanie popupu z 2-sekundowym opóźnieniem
         document.addEventListener('DOMContentLoaded', () => {
             const startDate = new Date('2025-11-14');
-            const endDate = new Date('2025-12-15');
+            const endDate = new Date('2026-01-01');
 
             if (isWithinDateRange(startDate, endDate)) {
                 setTimeout(() => {
