@@ -18,3 +18,5 @@ Prosimy o wcześniejszy kontakt z rejestracją:
 lub
 
 * osobiście w godzinach pracy placówki.
+
+#### Dziękujemy za zrozumienie i współpracę
