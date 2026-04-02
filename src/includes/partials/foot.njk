@@ -115,10 +115,10 @@
         }
         @media(min-width:767px) {
           .popup-content-wrap {
-            max-width: 700px;
+            max-width: 860px;
         }
         .popup-content {
-            padding: 2em;
+            padding: 1em;
         }
         }
     </style>
@@ -126,13 +126,7 @@
      <div class="popup-overlay" id="popup">
         <div class="popup-content-wrap">
         <div class="popup-content">
-            <img alt="Samodzielny Publiczny Zakład Opieki Zdrowotnej w Grabowie nad Pilicą - Logo" src="/assets/img/choinka.png" class="logo">
-            <h4>
-                Najserdeczniejsze życzenia radosnych Świąt Bożego Narodzenia oraz wszelkiej pomyślności i sukcesów w 2026 roku 
-            </h4>
-            <p class="medium mb-0">
-                Życzy kierownik oraz pracownicy <br class="d-none d-md-block">Przychodni Zdrowia w Grabowie nad Pilicą
-            </p>
+            <img alt="Samodzielny Publiczny Zakład Opieki Zdrowotnej w Grabowie nad Pilicą" src="/assets/img/wielkanoc2026.jpg" class="">
             <button onclick="closePopup()">Zamknij</button>
         </div>
         </div>
@@ -152,8 +146,8 @@
 
         // Wyświetlanie popupu z 2-sekundowym opóźnieniem
         document.addEventListener('DOMContentLoaded', () => {
-            const startDate = new Date('2025-11-14');
-            const endDate = new Date('2026-01-01');
+            const startDate = new Date('2026-04-01');
+            const endDate = new Date('2026-04-15');
 
             if (isWithinDateRange(startDate, endDate)) {
                 setTimeout(() => {
