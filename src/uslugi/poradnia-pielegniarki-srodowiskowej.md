@@ -5,5 +5,5 @@ date: 2022-05-15
 thumbnail: /assets/img/service/3.png
 ---
 
-#### Agnieszka Czubak
-#### Agnieszka Cichońska
+#### mgr Agnieszka Czubak
+#### mgr Agnieszka Cichońska
