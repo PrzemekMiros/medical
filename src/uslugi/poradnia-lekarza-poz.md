@@ -15,13 +15,13 @@ thumbnail: /assets/img/service/1.png
 | Czwartek          | 8.00 - 14.00    |
 | Piątek            | 8.00 - 14.00    |
 
-### Lech Żak - medycyna rodzinna
+### Jula Tarawska - medycyna rodzinna
 
 |                   |                 |
 | ----------------- | --------------- |
-| Poniedziałek      | 14.00 - 16.00    |
-| Wtorek            | 14.00 - 16.00    |
-| Środa             | 14.00 - 16.00    |
-| Czwartek          | 14.00 - 16.00    |
-| Piątek            | 14.00 - 16.00    |
+| Poniedziałek      | 14.00 - 18.00    |
+| Wtorek            | 14.00 - 18.00    |
+| Środa             | 14.00 - 18.00    |
+| Czwartek          | 14.00 - 18.00    |
+| Piątek            | 14.00 - 18.00    |
 
